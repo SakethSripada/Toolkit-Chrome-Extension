@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>To-do List</title>
+    <script src="tasks.js"></script>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+    <main>
+        <div class="main-content">
+        <div class="button-container">
+            <button id="schedule-btn" class="btn-top"><span class="material-icons">pending_actions</span></button>
+            <button id="add-task-btn">+</button>
+        </div>
+        
+        <div class="to-do-list">
+            <table id="to-do-list-table">
+                <caption>Your To-Do List</caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="addRowContainer">
+            <div class="modal" id="add-row-modal"> 
+                <div class="modalContent">
+                    <h2 id="addTask">Add a task</h2>
+                    <p>
+                        <form action="/submit" method="post">
+                            <label for="add-task">Task:</label>
+                            <input type="text" class="add-row-input" id="add-task" name="task-input">
+                            <label for="add-date">Due Date:</label>
+                            <input type="date" class="add-row-input" id="add-date" name="date-input">
+                            <label for="add-task">Status:</label>
+                            <input type="text" class="add-row-input" id="add-status" name="status-input">
+                            <label for="add-link">Link:</label>
+                            <input type="text" class="add-row-input-except" id="add-link" name="link-input" placeholder="Add a link if needed">
+                        </form>
+                        <button id="addRowSubmit">Submit</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="task-info-container">
+            <div class="modal" id="task-info-modal"> 
+                <div class="modalContent">
+                    <h2>Task</h2>
+                    <p id = "task-info">
+                        
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="daily-schedule">
+            <div class="modal" id="schedule-modal"> 
+                <div class="modalContent3">
+                    <h2>Daily Schedule</h2>
+                    <p id = "schedule">
+                        <ul id="schedule-list">
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <a href="index.html"><button id="home-btn"><span class="material-icons">home</span></button></a>
+
+</body>
+</html>

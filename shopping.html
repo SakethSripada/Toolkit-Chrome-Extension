@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel = "stylesheet" href = "shopping.css">
+    
+</head>
+<body>
+    <main>
+        <button id = "add-row-btn">+</button>
+      <div class="shopping-list">
+        <table id = "shopping-list-table">
+        <caption>Your Shopping List</caption>
+        <thead>
+            <tr>
+              <th>Item</th>
+              <th>Store</th>
+              <th class = "bad">Price</th>
+              <th>Link</th>
+            </tr>
+        </thead>
+           <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+      <div id="addRowContainer">
+        <div class="modal" id="add-row-modal"> 
+          <div class="modalContent">
+          <h2 id = "addPayment">Add a product</h2>
+           <p>
+            <form action="/submit" method="post">
+              <label for="input-box">Item:</label>
+            <input type="text" class="add-row-input"id="add-item" name="discount-input">
+            <label for="input-box">Store:</label>
+            <input type="text" class="add-row-input" id="add-store" name="store-input">
+            <label for="input-box">Price:</label>
+            <input type="text" class="add-row-input"id="add-price" name="price-input">
+            <label for="input-box">Link:</label>
+            <input type="text" class="add-row-input"id="add-link" name="link-input">
+        </form>
+        <button id = "addRowSubmit">Submit</button>
+           </p>
+          </div>
+      </div>
+     </div>
+    </main>
+    <a href = "index.html"><button id="home-btn"><span class="material-icons">home</span></button></a>
+    <script src = shopping.js></script>
+</body>
+</html>
