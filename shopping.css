@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 280px;
+  text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 23px;
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(114, 166, 233);
+}
+
+button:hover {
+    background-color: #2980b9;
+  }
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  main .shopping-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  main .shopping-list th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    gap: 30px;
+    font-weight: bold;
+  }
+  
+  main .shopping-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  main .shopping-list {
+    background: #fff;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  main .shopping-list:hover {
+    transform: scale(1.03);
+  }
+  
+
+caption{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modalContent {
+    background-color: #fefefe;
+    margin: 1.5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    border-radius: 40px;
+    height: 80%;
+    width: 40%;
+    justify-content: center;
+  }
+  
+  .modalContent h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .closeInstructions{
+    margin-top: 90px;
+  }
+
+  .modalContent form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalContent label {
+    margin-bottom: 5px;
+  }
+
+  #addRowSubmit{
+    font-size: 13px;
+    padding: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  #addRowSubmit:hover {
+    background-color: #134cc9;
+  }
+  
+  #home-btn {
+    position: absolute;
+    top: 10px;
+    left: 540px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #home-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  #add-row-btn {
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #add-row-btn:hover{
+    background-color: #2980b9;
+  }
+
+  .deleteButton{
+    background-color: #e42a1d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .wrap-cell {
+    white-space: normal;
+    word-break: break-word;
+    max-width: 7em; /* Adjust as needed */
+  }
+
+
+  #open-all-btn{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }

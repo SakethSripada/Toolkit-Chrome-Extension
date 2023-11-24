@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Notes App</title>
+    
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="notes" id="app">
+        <div class="notes__sidebar">
+            <input class="search-input" type="text" placeholder="Search">
+            <button class="notes__add" type="button">New Note</button>
+            <div class="notes__list">
+                <div class="notes__list-item">
+                    <div class="notes__small-title">Lecture Notes</div>
+                </div>
+            </div>
+        </div>
+        <div class="notes__preview">
+            <input class="notes__title" type="text" placeholder="Enter title">
+            <textarea class="notes__body" placeholder = "Enter text"></textarea>
+        </div> 
+    </div>
+    <div class="context-menu" id="context-menu">
+        <div class="context-menu__item" id="delete-note"><span class="material-icons">
+            delete
+            </span></div>
+    </div>
+    <script src="notes.js" type="module"></script>
+    <a href="index.html"><button id="home-btn"><span class="material-icons">home</span></button></a>
+</body>
+</html>
